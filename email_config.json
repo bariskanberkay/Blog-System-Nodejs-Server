@@ -1,0 +1,11 @@
+{
+    "emailFrom": "info@emailfrom.com",
+    "smtpOptions": {
+        "host": "[https://ethereal.email/]",
+        "port": 587,
+        "auth": {
+            "user": "",
+            "pass": ""
+        }
+    }
+}
