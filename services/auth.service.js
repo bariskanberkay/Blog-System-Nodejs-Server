@@ -147,7 +147,7 @@ async function hash(password) {
 
 function generateJwtToken(user) {
 
-    return jwt.sign({ sub: user.id, id: user.id }, config.app_secret, { expiresIn: '15m' });
+    return jwt.sign({ sub: user.id, id: user.id }, config.app_secret, { expiresIn: '60m' });
 }
 
 function generateRefreshToken(user, ipAddress) {
@@ -155,7 +155,7 @@ function generateRefreshToken(user, ipAddress) {
     return new db.RefreshToken({
         userId: user.id,
         token: randomTokenString(),
-        expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        expires: new Date(Date.now() + 17 * 24 * 60 * 60 * 1000),
         createdByIp: ipAddress
     });
 }
