@@ -29,7 +29,7 @@ app.use('/posts',require('./routes/post.routes'));
 //ERROR HANDLER
 app.use(errorHandler);
 
-const port = 4000;
+const port = 4040;
 
 app.listen(port,()=>console.log("Server Started on port "+port));
 
