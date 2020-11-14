@@ -1,4 +1,4 @@
-const Joi = require('Joi');
+const Joi = require('joi');
 const validateRequest = require('../middlewares/validate_request');
 
 exports.createPostSchema = (req,res,next) =>{
