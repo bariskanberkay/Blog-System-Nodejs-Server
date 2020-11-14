@@ -24,7 +24,7 @@ app.use('/auth',require('./routes/auth.routes'));
 
 app.use('/user',require('./routes/user.routes'));
 
-app.use('/post',require('./routes/post.routes'));
+app.use('/posts',require('./routes/post.routes'));
 
 //ERROR HANDLER
 app.use(errorHandler);
