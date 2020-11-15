@@ -19,6 +19,10 @@ app.post('/', (req, res) => {
   res.send(req.body)
 })
 
+app.get('/', (req, res) => {
+  res.send({message:'Welcome to News App Backend Api'})
+})
+
 //AUTH ROUTES
 app.use('/auth',require('./routes/auth.routes'));
 
