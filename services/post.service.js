@@ -86,7 +86,7 @@ async function update(id, params) {
     }
 
     await post.save();
-    return getPost(post.id);
+    return getPost(id);
 }
 
 async function _delete(id) {
